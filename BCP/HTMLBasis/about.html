@@ -1,0 +1,21 @@
+<html>
+
+<head>
+    <title>About</title>
+</head>
+
+<body>
+
+    <H1>About Page</H1>
+    <h3>Thông của bạn đã nhập</h3>
+    <h5 id="username"></h5>
+    <h5 id="password"></h5>
+    <script>
+        let link = window.location.href;
+        let url = new URL(link);
+        document.getElementById("username").innerHTML = `Tên đăng nhập: ${url.searchParams.get('username')}`;
+        document.getElementById("password").innerHTML = `Mật khẩu: ${url.searchParams.get('password')}`;
+    </script>
+</body>
+
+</html>

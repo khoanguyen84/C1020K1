@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button>Turn on</button>
+    <img id="light" src="images/off.png" alt="">
+    <button>Turn off</button>
+    <!-- <script src="light.js"></script> -->
+    <br>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Họ và tên</th>
+                <th>Quê quán</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <script>
+        let buttons = document.getElementsByTagName('button');
+        buttons[0].addEventListener('click', turnOn);
+        buttons[1].addEventListener('click', turnOff);
+
+        let tbody = document.getElementsByTagName('tbody')[0];
+        for (let i = 1; i <= 10; i++) {
+            tbody.innerHTML += `<tr>
+                                <td>${i}</td>
+                                <td>Khoa</td>
+                                <td>TT Huế</td>
+                                <td>
+                                    <button onclick='remove(${i})'>Remove</button>
+                                </td>
+                            </tr>`
+        }
+
+
+        function turnOn() {
+            let light = document.getElementById('light');
+            light.src = 'images/on.png'
+        }
+
+        function turnOff() {
+            let light = document.getElementById('light');
+            light.src = 'images/off.png'
+        }
+
+        function remove(id) {
+            // debugger;
+            let tbody = document.getElementsByTagName('tbody')[0];
+            tbody.deleteRow(id - 1);
+        }
+    </script>
+</body>
+
+</html>

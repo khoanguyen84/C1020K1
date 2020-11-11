@@ -1,0 +1,14 @@
+table {
+    position: fixed;
+    left: 0;
+    top: 400px;
+    border-radius: 50%;
+    background-color: chocolate;
+}
+
+button {
+    background-color: turquoise;
+    border: 0px solid;
+    color: white;
+    border-radius: 5px;
+}

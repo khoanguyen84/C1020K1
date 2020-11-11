@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <h1>C1020K1</h1>
+    <button onmouseover="this.innerHTML = new Date(); 
+                    this.style.color = 'red'; this.style.padding = '20px';" onmouseout="this.innerHTML = 'hover to show current time';
+            this.style.color='black'">hover to show current time</button>
+    <br>
+
+    <button id="btn2" onmouseover="showCurrentTime()" onmouseout="reset()">hover to show current time</button>
+    <br>
+    <button onmouseover="show(this)" onmouseout="hide(this)">hover to show current time</button>
+    <br>
+    <input type="password" id="pw" onkeypress="document.getElementById('showpw').value = this.value;"> <button onclick="showPassword()">Login</button>
+    <br>
+    <input type="text" id="showpw">
+    <br>
+    <input type="color" onchange="document.getElementsByTagName('body')[0].style.color = this.value;document.getElementsByTagName('body')[0].style.background = this.value;">
+    <br>
+    <select name="country" onchange="changeCountry()">
+        <option value="1">Việt Nam</option>
+        <option value="2">Thái Lan</option>
+        <option value="3">Lào</option>
+    </select>
+    <input type="text" id="showValue">
+    <!-- <script>
+        function showCurrentTime() {
+            let btn2 = document.getElementById("btn2");
+            btn2.innerHTML = new Date();
+            btn2.style.color = 'red';
+            btn2.style.padding = '20px';
+        }
+
+        function reset() {
+            let btn2 = document.getElementById("btn2");
+            btn2.innerHTML = 'hover to show current time';
+            btn2.style.color = 'black';
+        }
+
+        function show(ele) {
+            ele.innerHTML = new Date();
+            ele.style.color = 'red';
+        }
+
+        function hide(ele) {
+            ele.innerHTML = 'hover to show current time';
+            ele.style.color = 'black';
+        }
+    </script> -->
+</body>
+
+</html>
