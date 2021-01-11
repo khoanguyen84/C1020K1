@@ -1,0 +1,65 @@
+{
+  "matrix": [
+    [ 1, 2, 3, 4, 5 ],
+    [ 1, 2, 3, 4, 5 ]
+  ],
+  "students": [
+    {
+      "studentId": 1,
+      "fullname": "Khoa Nguyen",
+      "dob": "2000-1-1",
+      "scores": [
+        {
+          "scorename": "Toan",
+          "score": 8.9
+        },
+        {
+          "scorename": "Ly",
+          "score": 7.9
+        },
+        {
+          "scorename": "Hoa",
+          "score": 5.9
+        }
+      ]
+    },
+    {
+      "studentId": 2,
+      "fullname": "Tan Ton",
+      "dob": "2000-1-1",
+      "scores": [
+        {
+          "scorename": "Toan",
+          "score": 8.9
+        },
+        {
+          "scorename": "Ly",
+          "score": 7.9
+        },
+        {
+          "scorename": "Hoa",
+          "score": 5.9
+        }
+      ]
+    },
+    {
+      "studentId": 3,
+      "fullname": "Phuc Le",
+      "dob": "2000-1-1",
+      "scores": [
+        {
+          "scorename": "Toan",
+          "score": 8.9
+        },
+        {
+          "scorename": "Ly",
+          "score": 7.9
+        },
+        {
+          "scorename": "Hoa",
+          "score": 5.9
+        }
+      ]
+    }
+  ]
+}

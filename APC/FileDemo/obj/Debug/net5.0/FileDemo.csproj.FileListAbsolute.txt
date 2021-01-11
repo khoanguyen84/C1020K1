@@ -1,0 +1,16 @@
+C:\CodeGym\Class\C1020K1\APC\FileDemo\bin\Debug\net5.0\FileDemo.exe
+C:\CodeGym\Class\C1020K1\APC\FileDemo\bin\Debug\net5.0\FileDemo.deps.json
+C:\CodeGym\Class\C1020K1\APC\FileDemo\bin\Debug\net5.0\FileDemo.runtimeconfig.json
+C:\CodeGym\Class\C1020K1\APC\FileDemo\bin\Debug\net5.0\FileDemo.runtimeconfig.dev.json
+C:\CodeGym\Class\C1020K1\APC\FileDemo\bin\Debug\net5.0\FileDemo.dll
+C:\CodeGym\Class\C1020K1\APC\FileDemo\bin\Debug\net5.0\ref\FileDemo.dll
+C:\CodeGym\Class\C1020K1\APC\FileDemo\bin\Debug\net5.0\FileDemo.pdb
+C:\CodeGym\Class\C1020K1\APC\FileDemo\obj\Debug\net5.0\FileDemo.csprojAssemblyReference.cache
+C:\CodeGym\Class\C1020K1\APC\FileDemo\obj\Debug\net5.0\FileDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeGym\Class\C1020K1\APC\FileDemo\obj\Debug\net5.0\FileDemo.AssemblyInfoInputs.cache
+C:\CodeGym\Class\C1020K1\APC\FileDemo\obj\Debug\net5.0\FileDemo.AssemblyInfo.cs
+C:\CodeGym\Class\C1020K1\APC\FileDemo\obj\Debug\net5.0\FileDemo.csproj.CoreCompileInputs.cache
+C:\CodeGym\Class\C1020K1\APC\FileDemo\obj\Debug\net5.0\FileDemo.dll
+C:\CodeGym\Class\C1020K1\APC\FileDemo\obj\Debug\net5.0\ref\FileDemo.dll
+C:\CodeGym\Class\C1020K1\APC\FileDemo\obj\Debug\net5.0\FileDemo.pdb
+C:\CodeGym\Class\C1020K1\APC\FileDemo\obj\Debug\net5.0\FileDemo.genruntimeconfig.cache

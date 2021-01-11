@@ -1,0 +1,16 @@
+C:\CodeGym\Class\C1020K1\APC\Exception\obj\Debug\net5.0\Exception.csprojAssemblyReference.cache
+C:\CodeGym\Class\C1020K1\APC\Exception\obj\Debug\net5.0\Exception.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeGym\Class\C1020K1\APC\Exception\obj\Debug\net5.0\Exception.AssemblyInfoInputs.cache
+C:\CodeGym\Class\C1020K1\APC\Exception\obj\Debug\net5.0\Exception.AssemblyInfo.cs
+C:\CodeGym\Class\C1020K1\APC\Exception\obj\Debug\net5.0\Exception.csproj.CoreCompileInputs.cache
+C:\CodeGym\Class\C1020K1\APC\Exception\bin\Debug\net5.0\Exception.exe
+C:\CodeGym\Class\C1020K1\APC\Exception\bin\Debug\net5.0\Exception.deps.json
+C:\CodeGym\Class\C1020K1\APC\Exception\bin\Debug\net5.0\Exception.runtimeconfig.json
+C:\CodeGym\Class\C1020K1\APC\Exception\bin\Debug\net5.0\Exception.runtimeconfig.dev.json
+C:\CodeGym\Class\C1020K1\APC\Exception\bin\Debug\net5.0\Exception.dll
+C:\CodeGym\Class\C1020K1\APC\Exception\bin\Debug\net5.0\ref\Exception.dll
+C:\CodeGym\Class\C1020K1\APC\Exception\bin\Debug\net5.0\Exception.pdb
+C:\CodeGym\Class\C1020K1\APC\Exception\obj\Debug\net5.0\Exception.dll
+C:\CodeGym\Class\C1020K1\APC\Exception\obj\Debug\net5.0\ref\Exception.dll
+C:\CodeGym\Class\C1020K1\APC\Exception\obj\Debug\net5.0\Exception.pdb
+C:\CodeGym\Class\C1020K1\APC\Exception\obj\Debug\net5.0\Exception.genruntimeconfig.cache

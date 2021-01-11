@@ -1,0 +1,13 @@
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\bin\Debug\netcoreapp3.1\NUnitTest.exe
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\bin\Debug\netcoreapp3.1\NUnitTest.deps.json
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\bin\Debug\netcoreapp3.1\NUnitTest.runtimeconfig.json
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\bin\Debug\netcoreapp3.1\NUnitTest.runtimeconfig.dev.json
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\bin\Debug\netcoreapp3.1\NUnitTest.dll
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\bin\Debug\netcoreapp3.1\NUnitTest.pdb
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\obj\Debug\netcoreapp3.1\NUnitTest.csprojAssemblyReference.cache
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\obj\Debug\netcoreapp3.1\NUnitTest.AssemblyInfoInputs.cache
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\obj\Debug\netcoreapp3.1\NUnitTest.AssemblyInfo.cs
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\obj\Debug\netcoreapp3.1\NUnitTest.csproj.CoreCompileInputs.cache
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\obj\Debug\netcoreapp3.1\NUnitTest.dll
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\obj\Debug\netcoreapp3.1\NUnitTest.pdb
+C:\CodeGym\Class\C1020K1\APC\TDD\NUnitTest\obj\Debug\netcoreapp3.1\NUnitTest.genruntimeconfig.cache

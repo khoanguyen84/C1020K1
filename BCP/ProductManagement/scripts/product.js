@@ -17,6 +17,7 @@
                                 </td>
                             </tr>`;
      }
+     document.getElementById('ProductCount').innerHTML = `${products.length} products`;
  }
 
  function createProduct() {

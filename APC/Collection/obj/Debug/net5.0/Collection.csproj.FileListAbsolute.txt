@@ -1,0 +1,16 @@
+C:\CodeGym\Class\C1020K1\APC\Collection\bin\Debug\net5.0\Collection.exe
+C:\CodeGym\Class\C1020K1\APC\Collection\bin\Debug\net5.0\Collection.deps.json
+C:\CodeGym\Class\C1020K1\APC\Collection\bin\Debug\net5.0\Collection.runtimeconfig.json
+C:\CodeGym\Class\C1020K1\APC\Collection\bin\Debug\net5.0\Collection.runtimeconfig.dev.json
+C:\CodeGym\Class\C1020K1\APC\Collection\bin\Debug\net5.0\Collection.dll
+C:\CodeGym\Class\C1020K1\APC\Collection\bin\Debug\net5.0\ref\Collection.dll
+C:\CodeGym\Class\C1020K1\APC\Collection\bin\Debug\net5.0\Collection.pdb
+C:\CodeGym\Class\C1020K1\APC\Collection\obj\Debug\net5.0\Collection.csprojAssemblyReference.cache
+C:\CodeGym\Class\C1020K1\APC\Collection\obj\Debug\net5.0\Collection.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeGym\Class\C1020K1\APC\Collection\obj\Debug\net5.0\Collection.AssemblyInfoInputs.cache
+C:\CodeGym\Class\C1020K1\APC\Collection\obj\Debug\net5.0\Collection.AssemblyInfo.cs
+C:\CodeGym\Class\C1020K1\APC\Collection\obj\Debug\net5.0\Collection.csproj.CoreCompileInputs.cache
+C:\CodeGym\Class\C1020K1\APC\Collection\obj\Debug\net5.0\Collection.dll
+C:\CodeGym\Class\C1020K1\APC\Collection\obj\Debug\net5.0\ref\Collection.dll
+C:\CodeGym\Class\C1020K1\APC\Collection\obj\Debug\net5.0\Collection.pdb
+C:\CodeGym\Class\C1020K1\APC\Collection\obj\Debug\net5.0\Collection.genruntimeconfig.cache

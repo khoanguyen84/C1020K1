@@ -1,0 +1,16 @@
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\bin\Debug\net5.0\InheritDemo.exe
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\bin\Debug\net5.0\InheritDemo.deps.json
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\bin\Debug\net5.0\InheritDemo.runtimeconfig.json
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\bin\Debug\net5.0\InheritDemo.runtimeconfig.dev.json
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\bin\Debug\net5.0\InheritDemo.dll
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\bin\Debug\net5.0\ref\InheritDemo.dll
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\bin\Debug\net5.0\InheritDemo.pdb
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\obj\Debug\net5.0\InheritDemo.csprojAssemblyReference.cache
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\obj\Debug\net5.0\InheritDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\obj\Debug\net5.0\InheritDemo.AssemblyInfoInputs.cache
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\obj\Debug\net5.0\InheritDemo.AssemblyInfo.cs
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\obj\Debug\net5.0\InheritDemo.csproj.CoreCompileInputs.cache
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\obj\Debug\net5.0\InheritDemo.dll
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\obj\Debug\net5.0\ref\InheritDemo.dll
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\obj\Debug\net5.0\InheritDemo.pdb
+C:\CodeGym\Class\C1020K1\APC\InheritDemo\obj\Debug\net5.0\InheritDemo.genruntimeconfig.cache

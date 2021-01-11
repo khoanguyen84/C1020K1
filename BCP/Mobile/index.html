@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <table border="1">
+        <tr>
+            <td>
+                <table border="1" id="nokia">
+                    <caption>Nokia</caption>
+                    <tr>
+                        <td>
+                            <input type="text" id="msgNokia">
+                        </td>
+                        <td>
+                            <button onclick="send(nokia)">Send</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button onclick="power(nokia)">Power</button>
+                            <button>Inbox</button>
+                            <button>Sent</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="screenNokia">
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                &nbsp;&nbsp;
+            </td>
+            <td>
+                <table border="1" id="iphone">
+                    <caption>IPhone</caption>
+                    <tr>
+                        <td>
+                            <input type="text" id="msgIphone">
+                        </td>
+                        <td>
+                            <button onclick="send(iphone)">Send</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button onclick="power(iphone)">Power</button>
+                            <button>Inbox</button>
+                            <button>Sent</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" id="screenIP">
+
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="mobile.js"></script>
+</body>
+
+</html>
