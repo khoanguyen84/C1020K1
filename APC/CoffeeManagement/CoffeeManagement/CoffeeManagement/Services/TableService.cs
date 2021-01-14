@@ -39,9 +39,6 @@ namespace CoffeeManagement.Services
                 Console.WriteLine(tb.ToString());
             }
         }
-        #endregion
-
-        #region private
         public Table FindTable(int tableId)
         {
             foreach (Table tb in data.tables)
@@ -54,6 +51,5 @@ namespace CoffeeManagement.Services
             return new Table();
         }
         #endregion
-
     }
 }

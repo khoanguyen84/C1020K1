@@ -30,7 +30,7 @@ namespace CoffeeManagement.Ultilities
             {
                 using (StreamWriter sw = new StreamWriter(fullPath))
                 {
-                    sw.Write(JsonConvert.SerializeObject(data));
+                    sw.Write(JsonConvert.SerializeObject(data,Formatting.Indented));
                 }
             }
             catch (Exception ex)

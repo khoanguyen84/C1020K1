@@ -1,0 +1,62 @@
+[
+  {
+    "tableId": 2,
+    "startTime": "2021-01-14T10:10:27.2464101+07:00",
+    "endTime": null,
+    "totalAmount": 75000.0,
+    "ispaid": false,
+    "OrderDetails": [
+      {
+        "productName": "Black Coffee",
+        "quantity": 2,
+        "price": 10000.0,
+        "amount": 20000.0
+      },
+      {
+        "productName": "Milk Coffee",
+        "quantity": 1,
+        "price": 15000.0,
+        "amount": 15000.0
+      },
+      {
+        "productName": "Lemon Water",
+        "quantity": 2,
+        "price": 20000.0,
+        "amount": 40000.0
+      }
+    ]
+  },
+  {
+    "tableId": 1,
+    "startTime": "2021-01-14T10:11:42.0182318+07:00",
+    "endTime": "2021-01-14T11:01:06.2786763+07:00",
+    "totalAmount": 163000.0,
+    "ispaid": true,
+    "OrderDetails": [
+      {
+        "productName": "Black Coffee",
+        "quantity": 2,
+        "price": 10000.0,
+        "amount": 20000.0
+      },
+      {
+        "productName": "Milk Coffee",
+        "quantity": 3,
+        "price": 15000.0,
+        "amount": 45000.0
+      },
+      {
+        "productName": "Lemon Water",
+        "quantity": 4,
+        "price": 20000.0,
+        "amount": 80000.0
+      },
+      {
+        "productName": "Coca",
+        "quantity": 2,
+        "price": 9000.0,
+        "amount": 18000.0
+      }
+    ]
+  }
+]
