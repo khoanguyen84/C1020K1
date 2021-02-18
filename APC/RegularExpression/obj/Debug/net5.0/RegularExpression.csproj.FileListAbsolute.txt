@@ -1,0 +1,16 @@
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\bin\Debug\net5.0\RegularExpression.exe
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\bin\Debug\net5.0\RegularExpression.deps.json
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\bin\Debug\net5.0\RegularExpression.runtimeconfig.json
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\bin\Debug\net5.0\RegularExpression.runtimeconfig.dev.json
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\bin\Debug\net5.0\RegularExpression.dll
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\bin\Debug\net5.0\ref\RegularExpression.dll
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\bin\Debug\net5.0\RegularExpression.pdb
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\obj\Debug\net5.0\RegularExpression.csprojAssemblyReference.cache
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\obj\Debug\net5.0\RegularExpression.GeneratedMSBuildEditorConfig.editorconfig
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\obj\Debug\net5.0\RegularExpression.AssemblyInfoInputs.cache
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\obj\Debug\net5.0\RegularExpression.AssemblyInfo.cs
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\obj\Debug\net5.0\RegularExpression.csproj.CoreCompileInputs.cache
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\obj\Debug\net5.0\RegularExpression.dll
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\obj\Debug\net5.0\ref\RegularExpression.dll
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\obj\Debug\net5.0\RegularExpression.pdb
+C:\CodeGym\Class\C1020K1\APC\RegularExpression\obj\Debug\net5.0\RegularExpression.genruntimeconfig.cache

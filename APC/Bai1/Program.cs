@@ -10,6 +10,10 @@ namespace Bai1
     {
         static void Main(string[] args)
         {
+
+            string str = "sdfdf";
+            
+            
             // Console.InputEncoding = Encoding.UTF8;
             // Console.OutputEncoding = Encoding.UTF8;
             // Console.WriteLine("Hello World!");

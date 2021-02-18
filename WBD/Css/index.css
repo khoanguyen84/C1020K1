@@ -1,0 +1,129 @@
+/* 
+* : all,
+id : #id,
+class: .class,
+element name: p, h1, div, span
+pseudo element
+Attribute selector
+ */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0px;
+}
+
+p::first-line {
+    /* text-transform: uppercase; */
+    color: chartreuse
+}
+
+p::first-letter {
+    font-weight: 900;
+    font-size: 30px;
+}
+
+p::before {
+    content: "CodeGym";
+}
+
+p::after {
+    content: "Hue";
+}
+
+div {
+    margin: 0px;
+    padding: 0px;
+}
+
+span::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: red;
+    padding: 4px 0px;
+    position: absolute;
+    top: -10px;
+    left: 0;
+}
+
+span {
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: gray;
+    padding: 4px 0px;
+    margin: 20px 0px;
+    position: relative;
+}
+
+span::after {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 1px;
+    background-color: yellow;
+    padding: 4px 0px;
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+
+p::selection {
+    color: red;
+    background-color: yellow;
+}
+
+input[type=text] {
+    padding: 10px 10px 0px 0px;
+    border: none;
+    outline: none;
+    border-bottom: 1px dashed black;
+    margin-bottom: 5px;
+}
+
+
+/* a,
+a:link,
+a:active,
+a:visited {
+    text-decoration: none;
+    color: white;
+    background-color: green;
+    padding: 10px 5px;
+    border-radius: 3px;
+}
+
+a:hover {
+    background-color: darkgreen;
+} */
+
+#pagination {
+    list-style: none;
+}
+
+#pagination li {
+    display: inline-block;
+}
+
+#pagination li:not(:last-child) {
+    border-right: 1px solid black;
+}
+
+.lg {
+    width: 300px;
+    height: 300px;
+    display: block;
+    background-size: 300px 300px;
+    background-image: linear-gradient(to right, rgba(250, 0, 0, 0.2), rgba(250, 0, 0, 0.8)), url('/image/111.jpg');
+}
+
+h1 {
+    background-image: linear-gradient(yellow, green);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 100px;
+}
