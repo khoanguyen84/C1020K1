@@ -13,6 +13,13 @@ namespace AspNetCore
     using Microsoft.AspNetCore.Mvc.Rendering;
     using Microsoft.AspNetCore.Mvc.ViewFeatures;
 #nullable restore
+#line 2 "C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\Views\_ViewImports.cshtml"
+using EmployeeMangement.Models.Account;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\Views\Home\_ViewImports.cshtml"
 using EmployeeMangement.Models.About;
 
@@ -20,7 +27,7 @@ using EmployeeMangement.Models.About;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7ebe793ae32f8a1acda33f9f4b26e0b15f3caa51", @"/Views/Home/_ViewImports.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7ebe793ae32f8a1acda33f9f4b26e0b15f3caa51", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"3cf18455bf4c58c9999bd2175171ec47af68b79e", @"/Views/_ViewImports.cshtml")]
     public class Views_Home__ViewImports : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         #pragma warning disable 1998

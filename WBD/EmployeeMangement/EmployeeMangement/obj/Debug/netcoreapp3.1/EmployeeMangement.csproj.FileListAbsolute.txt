@@ -36,3 +36,7 @@ C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netco
 C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netcoreapp3.1\Razor\Views\Home\_ViewStart.cshtml.g.cs
 C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_HomeLayout.cshtml.g.cs
+C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
+C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netcoreapp3.1\Razor\Views\Account\_ViewStart.cshtml.g.cs
+C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_AccountLayout.cshtml.g.cs
+C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netcoreapp3.1\Razor\Views\Dashboard\Index.cshtml.g.cs
