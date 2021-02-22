@@ -17,6 +17,7 @@ namespace EmployeeMangement
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddMvc(option => option.EnableEndpointRouting = false);
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -33,7 +34,7 @@ namespace EmployeeMangement
             {
                 routers.MapRoute(
                         name: "default",
-                        template: "{controller=Account}/{action=Login}/{id?}"
+                        template: "{controller=Employee}/{action=Index}/{id?}"
                     );
                 routers.MapRoute(
                         name: "2ndRouting",

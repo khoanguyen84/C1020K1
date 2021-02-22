@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "Create Employee";
+}
+
+@model Employee
+<div class="row">
+    <div class="col-12">
+        <form action="/action_page.php">
+            <div class="row">
+                <div class="col-3">
+                    <img id="Avatar" src="~/images/avatar10.jpg" style="width:100%" />
+                    <div class="custom-file">
+                        <input type="file" accept="image/*" class="custom-file-input" id="customFile">
+                        <label class="custom-file-label" for="customFile">Choose file</label>
+                    </div>
+                </div>
+                <div class="col-9">
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6">
+                                <label asp-for="Firstname"></label>
+                                <input class="form-control" asp-for="Firstname">
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="Lastname"></label>
+                                <input class="form-control" asp-for="Lastname">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="row">
+                            <div class="col-6">
+                                <label asp-for="Code"></label>
+                                <input class="form-control" asp-for="Code">
+                            </div>
+                            <div class="col-6">
+                                <label asp-for="Age"></label>
+                                <input class="form-control" min="18" max="60" asp-for="Age">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label asp-for="Email"></label>
+                        <input class="form-control" asp-for="Email">
+                    </div>
+                    <a class="btn btn-primary">
+                        <i class="fa fa-floppy-o" style="font-size:32px" aria-hidden="true"></i>
+                    </a>
+                    <a class="btn btn-danger">
+                        <i class="fa fa-times" style="font-size:32px" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            
+            
+        </form>
+    </div>
+
+</div>
+@section Script{
+    <script>
+        $(document).ready(function () {
+            $(".custom-file-input").on("change", function () {
+                var fileName = $(this).val().split("\\").pop();
+                $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+            });
+            $('#Avatar').prop('src', fileName);
+        });
+    </script>
+} 
