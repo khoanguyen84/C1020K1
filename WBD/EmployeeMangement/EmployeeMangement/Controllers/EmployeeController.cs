@@ -1,4 +1,5 @@
-﻿using EmployeeMangement.Services;
+﻿using EmployeeMangement.Models.Employee;
+using EmployeeMangement.Services;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -9,20 +10,31 @@ namespace EmployeeMangement.Controllers
 {
     public class EmployeeController : Controller
     {
-        private readonly MockEmployeeService employeeService;
+        private readonly IEmployeeService employeeService;
 
-        public EmployeeController()
+        public EmployeeController(IEmployeeService employeeService)
         {
-            this.employeeService = new MockEmployeeService();
+            this.employeeService = employeeService;
         }
         public IActionResult Index()
         {
             return View(employeeService.Gets());
         }
 
+        [HttpGet]
         public IActionResult Create()
         {
             return View();
+        }
+        [HttpPost]
+        public IActionResult Create(Employee model)
+        {
+            if (ModelState.IsValid)
+            {
+                if (employeeService.Create(model))
+                    return RedirectToAction("Index");
+            }
+            return View(model);
         }
     }
 }

@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace EmployeeMangement.Services
 {
-    interface IEmployeeService
+    public interface IEmployeeService
     {
         public List<Employee> Gets();
+        public bool Create(Employee request);
     }
 }

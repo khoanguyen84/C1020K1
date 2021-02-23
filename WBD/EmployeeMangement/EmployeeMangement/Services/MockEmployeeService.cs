@@ -42,9 +42,25 @@ namespace EmployeeMangement.Services
                 }
             };
         }
+
+        public bool Create(Employee request)
+        {
+            try
+            {
+                employees.Add(request);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         public List<Employee> Gets()
         {
             return employees;
         }
+
+
     }
 }

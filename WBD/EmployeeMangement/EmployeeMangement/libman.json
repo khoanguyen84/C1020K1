@@ -43,6 +43,20 @@
     {
       "library": "font-awesome@4.7.0",
       "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "library": "jquery-validate@1.19.2",
+      "destination": "wwwroot/lib/jquery-validation/",
+      "files": [
+        "jquery.validate.min.js"
+      ]
+    },
+    {
+      "library": "jquery-validation-unobtrusive@3.2.12",
+      "destination": "wwwroot/lib/jquery-validation/",
+      "files": [
+        "jquery.validate.unobtrusive.min.js"
+      ]
     }
   ]
 }
