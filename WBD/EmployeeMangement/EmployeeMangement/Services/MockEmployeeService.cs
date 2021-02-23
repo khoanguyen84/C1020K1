@@ -47,6 +47,7 @@ namespace EmployeeMangement.Services
         {
             try
             {
+                request.Id = employees.Max(e => e.Id) + 1;
                 employees.Add(request);
                 return true;
             }
@@ -54,6 +55,30 @@ namespace EmployeeMangement.Services
             {
                 return false;
             }
+        }
+
+        public bool Edit(Employee request)
+        {
+            try
+            {
+                var employee = Get(request.Id);
+                employee.Firstname = request.Firstname;
+                employee.Lastname = request.Lastname;
+                employee.Age = request.Age;
+                employee.Email = request.Email;
+                employee.AvatarPath = request.AvatarPath;
+                employee.Code = request.Code;
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public Employee Get(int id)
+        {
+            return employees.FirstOrDefault(e => e.Id == id);
         }
 
         public List<Employee> Gets()

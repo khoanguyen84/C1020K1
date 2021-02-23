@@ -10,5 +10,7 @@ namespace EmployeeMangement.Services
     {
         public List<Employee> Gets();
         public bool Create(Employee request);
+        public Employee Get(int id);
+        public bool Edit(Employee request);
     }
 }

@@ -1,15 +1,14 @@
 ﻿@{
-    ViewBag.Title = "Create Employee";
+    ViewBag.Title = "Modify Employee";
 }
 
-@model CreateEmployee
+@model EditEmployee
 <div class="row">
     <div class="col-12">
-        <form enctype="multipart/form-data" method="post" asp-controller="Employee" asp-action="Create">
-            @*<div asp-validation-summary="All" class="text-danger"></div>*@
+        <form enctype="multipart/form-data" method="post" asp-controller="Employee" asp-action="Edit">
             <div class="row">
                 <div class="col-3">
-                    <img id="avatar" class="rounded-circle" src="~/images/noavatar.jpg" style="width:100%" />
+                    <img id="avatar" class="rounded-circle" src="@Url.Content(Model.AvatarPath)" style="width:100%" />
                     <div class="custom-file">
                         <input type="file" accept="image/*" name="Avatar" class="custom-file-input" id="customFile">
                         <label class="custom-file-label" for="customFile">Choose file</label>
@@ -22,6 +21,8 @@
                                 <label asp-for="Firstname"></label>
                                 <input class="form-control" asp-for="Firstname">
                                 <span asp-validation-for="Firstname" class="text-danger"></span>
+                                <input asp-for="Id" hidden />
+                                <input asp-for="AvatarPath" hidden />
                             </div>
                             <div class="col-6">
                                 <label asp-for="Lastname"></label>

@@ -360,3 +360,5 @@ C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netco
 C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netcoreapp3.1\EmployeeMangement.dll
 C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netcoreapp3.1\EmployeeMangement.pdb
 C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netcoreapp3.1\EmployeeMangement.genruntimeconfig.cache
+C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Profile.cshtml.g.cs
+C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\obj\Debug\netcoreapp3.1\Razor\Views\Employee\Edit.cshtml.g.cs
