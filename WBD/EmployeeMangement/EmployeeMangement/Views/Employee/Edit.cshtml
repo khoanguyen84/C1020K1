@@ -5,6 +5,9 @@
 @model EditEmployee
 <div class="row">
     <div class="col-12">
+        <p><a asp-controller="Employee" asp-action="Index">Employee</a> &gt; @Model.Fullname</p>
+    </div>
+    <div class="col-12">
         <form enctype="multipart/form-data" method="post" asp-controller="Employee" asp-action="Edit">
             <div class="row">
                 <div class="col-3">
@@ -53,13 +56,13 @@
                     <button type="submit" class="btn btn-primary">
                         <i class="fa fa-floppy-o" style="font-size:32px" aria-hidden="true"></i>
                     </button>
-                    <a class="btn btn-danger">
+                    <a asp-controller="Employee" asp-action="Profile" asp-route-id="@Model.Id" class="btn btn-danger">
                         <i class="fa fa-times" style="font-size:32px" aria-hidden="true"></i>
                     </a>
                 </div>
             </div>
-            
-            
+
+
         </form>
     </div>
 

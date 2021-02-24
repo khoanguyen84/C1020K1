@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeMangement.Models.Employee
 {
-    public class Employee
+    public class ViewEmployee
     {
         public int Id { get; set; }
         [Required(ErrorMessage = "Code is required")]

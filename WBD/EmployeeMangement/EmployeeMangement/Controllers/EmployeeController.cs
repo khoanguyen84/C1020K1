@@ -42,13 +42,13 @@ namespace EmployeeMangement.Controllers
                 //4. copy image to folder step 2
 
                 var folderPath = Path.Combine(webHostEnvironment.WebRootPath, "images");
-                var filename = model.Avatar.FileName;
+                var filename = $"{Guid.NewGuid()}_{model.Avatar.FileName}";
                 var filePath = Path.Combine(folderPath, filename);
                 using (var fs = new FileStream(filePath, FileMode.Create))
                 {
                     model.Avatar.CopyTo(fs);
                 }
-                var employee = new Employee()
+                var employee = new ViewEmployee()
                 {
                     Age = model.Age,
                     AvatarPath = $"~/images/{filename}",
@@ -102,7 +102,7 @@ namespace EmployeeMangement.Controllers
 
                     //upload new file
                     var folderPath = Path.Combine(webHostEnvironment.WebRootPath, "images");
-                    var filename = model.Avatar.FileName;
+                    var filename = $"{Guid.NewGuid()}_{model.Avatar.FileName}";
                     var filePath = Path.Combine(folderPath, filename);
                     using (var fs = new FileStream(filePath, FileMode.Create))
                     {
@@ -110,7 +110,7 @@ namespace EmployeeMangement.Controllers
                     }
                     existingAvatar = $"~/images/{filename}";
                 }
-                var employee = new Employee()
+                var employee = new ViewEmployee()
                 {
                     Age = model.Age,
                     AvatarPath = existingAvatar,
@@ -124,6 +124,29 @@ namespace EmployeeMangement.Controllers
                     return RedirectToAction("Profile", "Employee", new { id = model.Id});
             }
             return View(model);
+        }
+
+        [HttpGet("/Employee/Delete/{employeeId}")]
+        public IActionResult Delete(int employeeId)
+        {
+            var employee = employeeService.Get(employeeId);
+            return View(employee);
+        }
+
+        [HttpGet("/Employee/ConfirmDelete/{employeeId}")]
+        public IActionResult ConfirmDelete(int employeeId)
+        {
+            var delEmployee = employeeService.Get(employeeId);
+            if(delEmployee != null)
+            {
+                var filename = delEmployee.AvatarPath.Split("/").Last();
+                System.IO.File.Delete(Path.Combine(webHostEnvironment.WebRootPath, "images", filename));
+                employeeService.Remove(delEmployee);
+                return RedirectToAction("Index");
+            }
+            var employee = employeeService.Get(employeeId);
+            ViewBag.Error = "Something went wrong, please contact administator";
+            return View("~/Views/Employee/Delete.cshtml", employee);
         }
     }
 }

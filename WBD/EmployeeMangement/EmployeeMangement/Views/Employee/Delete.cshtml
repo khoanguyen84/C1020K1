@@ -1,15 +1,23 @@
 ﻿@model ViewEmployee
 @{
-    ViewBag.Title = "Employee Pofile";
+    ViewBag.Title = "Remove Employee";
+    var msg = ViewBag.Error != null ? ViewBag.Error : "";
 }
 
 <div class="row">
     <div class="col-12">
         <div class="row">
             <div class="col-12">
-                <p><a asp-controller="Employee" asp-action="Index">Employee</a> &gt; @Model.Fullname</p> 
+                <p><a asp-controller="Employee" asp-action="Profile" asp-route-id="@Model.Id">Employee</a> &gt; @Model.Fullname</p> 
             </div>
         </div>
+        @if (!string.IsNullOrEmpty(msg))
+        {
+            <div class="alert alert-danger">
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
+                <strong>Error</strong> @msg
+            </div>
+        }
         <div class="row">
             <div class="col-3">
                 <img id="avatar" class="rounded-circle" src="@Url.Content(Model.AvatarPath)" style="width:100%" />
@@ -43,11 +51,11 @@
                     <label asp-for="Email"></label>
                     <h6>@Model.Email</h6>
                 </div>
-                <a class="btn btn-primary" asp-controller="Employee" asp-action="Edit" asp-route-employeeId ="@Model.Id">
-                    <i class="fa fa-pencil-square-o" style="font-size:32px" aria-hidden="true"></i>
+                <a class="btn btn-primary" asp-controller="Employee" asp-action="ConfirmDelete" asp-route-employeeId ="@Model.Id">
+                    <i class="fa fa-check" style="font-size:32px" aria-hidden="true"></i>
                 </a>
-                <a asp-controller="Employee" asp-action="Delete" asp-route-employeeId ="@Model.Id" class="btn btn-danger">
-                    <i class="fa fa-trash" style="font-size:32px" aria-hidden="true"></i>
+                <a asp-controller="Employee" asp-action="Profile" asp-route-id="@Model.Id" class="btn btn-danger">
+                    <i class="fa fa-undo" style="font-size:32px" aria-hidden="true"></i>
                 </a>
             </div>
         </div>

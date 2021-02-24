@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeMangement.Models.Employee
 {
-    public class CreateEmployee : Employee
+    public class CreateEmployee : ViewEmployee
     {
         public IFormFile Avatar { get; set; }
     }

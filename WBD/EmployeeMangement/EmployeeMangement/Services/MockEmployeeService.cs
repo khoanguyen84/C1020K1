@@ -8,12 +8,12 @@ namespace EmployeeMangement.Services
 {
     public class MockEmployeeService : IEmployeeService
     {
-        private List<Employee> employees;
+        private List<ViewEmployee> employees;
         public MockEmployeeService()
         {
-            employees = new List<Employee>()
+            employees = new List<ViewEmployee>()
             {
-                new Employee()
+                new ViewEmployee()
                 {
                     Age = 18,
                     AvatarPath = "~/images/avatar11.jpg",
@@ -22,7 +22,7 @@ namespace EmployeeMangement.Services
                     Lastname = "Nguyen",
                     Id = 1
                 },
-                new Employee()
+                new ViewEmployee()
                 {
                     Age = 18,
                     AvatarPath = "~/images/avatar10.jpg",
@@ -31,7 +31,7 @@ namespace EmployeeMangement.Services
                     Lastname = "Tran",
                     Id = 2
                 },
-                new Employee()
+                new ViewEmployee()
                 {
                     Age = 18,
                     AvatarPath = "~/images/avatar14.jpg",
@@ -43,7 +43,7 @@ namespace EmployeeMangement.Services
             };
         }
 
-        public bool Create(Employee request)
+        public bool Create(ViewEmployee request)
         {
             try
             {
@@ -57,7 +57,7 @@ namespace EmployeeMangement.Services
             }
         }
 
-        public bool Edit(Employee request)
+        public bool Edit(ViewEmployee request)
         {
             try
             {
@@ -76,16 +76,19 @@ namespace EmployeeMangement.Services
             }
         }
 
-        public Employee Get(int id)
+        public ViewEmployee Get(int id)
         {
             return employees.FirstOrDefault(e => e.Id == id);
         }
 
-        public List<Employee> Gets()
+        public List<ViewEmployee> Gets()
         {
             return employees;
         }
 
-
+        public bool Remove(ViewEmployee request)
+        {
+            return employees.Remove(request);
+        }
     }
 }

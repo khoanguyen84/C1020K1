@@ -8,9 +8,10 @@ namespace EmployeeMangement.Services
 {
     public interface IEmployeeService
     {
-        public List<Employee> Gets();
-        public bool Create(Employee request);
-        public Employee Get(int id);
-        public bool Edit(Employee request);
+        public List<ViewEmployee> Gets();
+        public bool Create(ViewEmployee request);
+        public ViewEmployee Get(int id);
+        public bool Edit(ViewEmployee request);
+        public bool Remove(ViewEmployee request);
     }
 }
