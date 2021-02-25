@@ -11,7 +11,7 @@
         <form enctype="multipart/form-data" method="post" asp-controller="Employee" asp-action="Edit">
             <div class="row">
                 <div class="col-3">
-                    <img id="avatar" class="rounded-circle" src="@Url.Content(Model.AvatarPath)" style="width:100%" />
+                    <img id="avatar" class="rounded-circle" src="@Url.Content($"/images/{Model.AvatarPath}")" style="width:100%" />
                     <div class="custom-file">
                         <input type="file" accept="image/*" name="Avatar" class="custom-file-input" id="customFile">
                         <label class="custom-file-label" for="customFile">Choose file</label>

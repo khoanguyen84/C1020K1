@@ -28,7 +28,7 @@ namespace EmployeeMangement
         {
             services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
-            services.AddSingleton<IEmployeeService, MockEmployeeService>();
+            services.AddScoped<IEmployeeService, SqlEmployeeService>();
             services.AddDbContext<AppDbContext>(option => option.UseSqlServer(config.GetConnectionString("DbConnection")));
         }
 

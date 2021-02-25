@@ -5,6 +5,11 @@
 @model CreateEmployee
 <div class="row">
     <div class="col-12">
+        <p><a asp-controller="Employee" asp-action="Index">Employee</a></p>
+    </div>
+</div>
+<div class="row">
+    <div class="col-12">
         <form enctype="multipart/form-data" method="post" asp-controller="Employee" asp-action="Create">
             @*<div asp-validation-summary="All" class="text-danger"></div>*@
             <div class="row">

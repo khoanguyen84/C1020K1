@@ -1,4 +1,5 @@
-﻿using EmployeeMangement.Models.Employee;
+﻿using EmployeeMangement.Entities;
+using EmployeeMangement.Models.Employee;
 using EmployeeMangement.Services;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -40,18 +41,21 @@ namespace EmployeeMangement.Controllers
                 //2. create folder path
                 //3. filename path
                 //4. copy image to folder step 2
-
-                var folderPath = Path.Combine(webHostEnvironment.WebRootPath, "images");
-                var filename = $"{Guid.NewGuid()}_{model.Avatar.FileName}";
-                var filePath = Path.Combine(folderPath, filename);
-                using (var fs = new FileStream(filePath, FileMode.Create))
+                var filename = "noavatar.jpg";
+                if (model.Avatar != null)
                 {
-                    model.Avatar.CopyTo(fs);
+                    var folderPath = Path.Combine(webHostEnvironment.WebRootPath, "images");
+                    filename = $"{Guid.NewGuid()}_{model.Avatar.FileName}";
+                    var filePath = Path.Combine(folderPath, filename);
+                    using (var fs = new FileStream(filePath, FileMode.Create))
+                    {
+                        model.Avatar.CopyTo(fs);
+                    }
                 }
                 var employee = new ViewEmployee()
                 {
                     Age = model.Age,
-                    AvatarPath = $"~/images/{filename}",
+                    AvatarPath = filename,
                     Code = model.Code,
                     Email = model.Email,
                     Firstname = model.Firstname,
@@ -96,10 +100,12 @@ namespace EmployeeMangement.Controllers
                 if(model.Avatar != null)
                 {
                     //remove exist file
-
+                    
                     existingAvatar = existingAvatar.Split("/").Last();
-                    System.IO.File.Delete(Path.Combine(webHostEnvironment.WebRootPath, "images", existingAvatar));
-
+                    if(string.Compare(existingAvatar, "noavatar.jpg") != 0)
+                    {
+                        System.IO.File.Delete(Path.Combine(webHostEnvironment.WebRootPath, "images", existingAvatar));
+                    }
                     //upload new file
                     var folderPath = Path.Combine(webHostEnvironment.WebRootPath, "images");
                     var filename = $"{Guid.NewGuid()}_{model.Avatar.FileName}";
@@ -108,7 +114,7 @@ namespace EmployeeMangement.Controllers
                     {
                         model.Avatar.CopyTo(fs);
                     }
-                    existingAvatar = $"~/images/{filename}";
+                    existingAvatar = filename;
                 }
                 var employee = new ViewEmployee()
                 {
@@ -140,7 +146,10 @@ namespace EmployeeMangement.Controllers
             if(delEmployee != null)
             {
                 var filename = delEmployee.AvatarPath.Split("/").Last();
-                System.IO.File.Delete(Path.Combine(webHostEnvironment.WebRootPath, "images", filename));
+                if (string.Compare(filename, "noavatar.jpg") != 0)
+                {
+                    System.IO.File.Delete(Path.Combine(webHostEnvironment.WebRootPath, "images", filename));
+                }
                 employeeService.Remove(delEmployee);
                 return RedirectToAction("Index");
             }
