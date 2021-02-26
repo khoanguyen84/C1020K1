@@ -14,10 +14,31 @@ namespace EmployeeMangement.DbContexts
 
         }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<Member> Members { get; set; }
+        public DbSet<Food> Foods { get; set; }
+        public DbSet<MemberFood> MemberFoods { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Department>().HasData(
+                new Department()
+                {
+                    DepartmentId = 1,
+                    DepartmentName = "IT",
+                    Email = "it@codegym.vn",
+                    PhoneNumber = "0935216417"
+                },
+                new Department()
+                {
+                    DepartmentId = 2,
+                    DepartmentName = "HR",
+                    Email = "hr@codegym.vn",
+                    PhoneNumber = "0935216417"
+                });
+                
+                
             modelBuilder.Entity<Employee>().HasData(
                 new Employee() {
                     Age = 18,
@@ -26,7 +47,8 @@ namespace EmployeeMangement.DbContexts
                     Firstname = "Khoa",
                     Lastname = "Nguyen",
                     Email = "khoa.nguyen@codegym.vn",
-                    EmployeeId = 1
+                    EmployeeId = 1,
+                    DepartmentId = 1
                 },
                 new Employee() {
                     Age = 18,
@@ -35,7 +57,8 @@ namespace EmployeeMangement.DbContexts
                     Firstname = "Hung",
                     Lastname = "Tran",
                     Email = "hung.tran@codegym.vn",
-                    EmployeeId = 2
+                    EmployeeId = 2,
+                    DepartmentId = 1
                 },
                 new Employee()
                 {
@@ -45,7 +68,8 @@ namespace EmployeeMangement.DbContexts
                     Firstname = "Huy",
                     Lastname = "Phan",
                     Email = "huy.phan@codegym.vn",
-                    EmployeeId = 3
+                    EmployeeId = 3,
+                    DepartmentId = 2
                 });
         }
     }

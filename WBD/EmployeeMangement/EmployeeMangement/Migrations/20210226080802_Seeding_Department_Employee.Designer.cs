@@ -9,8 +9,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EmployeeMangement.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210224090710_SeedingEmployeeTable")]
-    partial class SeedingEmployeeTable
+    [Migration("20210226080802_Seeding_Department_Employee")]
+    partial class Seeding_Department_Employee
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -19,6 +19,49 @@ namespace EmployeeMangement.Migrations
                 .HasAnnotation("ProductVersion", "3.1.12")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+            modelBuilder.Entity("EmployeeMangement.Entities.Department", b =>
+                {
+                    b.Property<int>("DepartmentId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("DepartmentName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(200)")
+                        .HasMaxLength(200);
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(50)")
+                        .HasMaxLength(50);
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(20)")
+                        .HasMaxLength(20);
+
+                    b.HasKey("DepartmentId");
+
+                    b.ToTable("Departments");
+
+                    b.HasData(
+                        new
+                        {
+                            DepartmentId = 1,
+                            DepartmentName = "IT",
+                            Email = "it@codegym.vn",
+                            PhoneNumber = "0935216417"
+                        },
+                        new
+                        {
+                            DepartmentId = 2,
+                            DepartmentName = "HR",
+                            Email = "hr@codegym.vn",
+                            PhoneNumber = "0935216417"
+                        });
+                });
 
             modelBuilder.Entity("EmployeeMangement.Entities.Employee", b =>
                 {
@@ -39,6 +82,9 @@ namespace EmployeeMangement.Migrations
                         .HasColumnType("nvarchar(8)")
                         .HasMaxLength(8);
 
+                    b.Property<int>("DepartmentId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(100)")
@@ -56,6 +102,8 @@ namespace EmployeeMangement.Migrations
 
                     b.HasKey("EmployeeId");
 
+                    b.HasIndex("DepartmentId");
+
                     b.ToTable("Employees");
 
                     b.HasData(
@@ -65,6 +113,7 @@ namespace EmployeeMangement.Migrations
                             Age = 18,
                             AvatarPath = "avatar11.jpg",
                             Code = "CGH00001",
+                            DepartmentId = 1,
                             Email = "khoa.nguyen@codegym.vn",
                             Firstname = "Khoa",
                             Lastname = "Nguyen"
@@ -75,6 +124,7 @@ namespace EmployeeMangement.Migrations
                             Age = 18,
                             AvatarPath = "avatar10.jpg",
                             Code = "CGH00002",
+                            DepartmentId = 1,
                             Email = "hung.tran@codegym.vn",
                             Firstname = "Hung",
                             Lastname = "Tran"
@@ -85,10 +135,20 @@ namespace EmployeeMangement.Migrations
                             Age = 18,
                             AvatarPath = "avatar14.jpg",
                             Code = "CGH00003",
+                            DepartmentId = 2,
                             Email = "huy.phan@codegym.vn",
                             Firstname = "Huy",
                             Lastname = "Phan"
                         });
+                });
+
+            modelBuilder.Entity("EmployeeMangement.Entities.Employee", b =>
+                {
+                    b.HasOne("EmployeeMangement.Entities.Department", "Department")
+                        .WithMany("Employees")
+                        .HasForeignKey("DepartmentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 #pragma warning restore 612, 618
         }

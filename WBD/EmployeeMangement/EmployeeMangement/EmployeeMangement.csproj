@@ -9,6 +9,20 @@
     <Compile Remove="Migrations\20210224083901_InitDb.Designer.cs" />
     <Compile Remove="Migrations\20210224085312_AlterEmployeeTable.cs" />
     <Compile Remove="Migrations\20210224085312_AlterEmployeeTable.Designer.cs" />
+    <Compile Remove="Migrations\20210226073735_Create_Relationship_Employee_Department.cs" />
+    <Compile Remove="Migrations\20210226073735_Create_Relationship_Employee_Department.Designer.cs" />
+    <Compile Remove="Migrations\20210226074020_Create_Relationship_Employee_Department.cs" />
+    <Compile Remove="Migrations\20210226074020_Create_Relationship_Employee_Department.Designer.cs" />
+    <Compile Remove="Migrations\20210226074206_Create_Relationship_Employee_Department.cs" />
+    <Compile Remove="Migrations\20210226074206_Create_Relationship_Employee_Department.Designer.cs" />
+    <Compile Remove="Migrations\20210226074257_Create_Relationship_Employee_Department.cs" />
+    <Compile Remove="Migrations\20210226074257_Create_Relationship_Employee_Department.Designer.cs" />
+    <Compile Remove="Migrations\20210226074400_Create_Relationship_Employee_Department.cs" />
+    <Compile Remove="Migrations\20210226074400_Create_Relationship_Employee_Department.Designer.cs" />
+    <Compile Remove="Migrations\20210226075712_Create_Relationship_Employee_Department.cs" />
+    <Compile Remove="Migrations\20210226075712_Create_Relationship_Employee_Department.Designer.cs" />
+    <Compile Remove="Migrations\20210226075825_Create_Relationship_Employee_Department.cs" />
+    <Compile Remove="Migrations\20210226075825_Create_Relationship_Employee_Department.Designer.cs" />
   </ItemGroup>
 
   <ItemGroup>
