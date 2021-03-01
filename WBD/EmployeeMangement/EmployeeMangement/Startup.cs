@@ -1,4 +1,5 @@
 using EmployeeMangement.DbContexts;
+using EmployeeMangement.Entities;
 using EmployeeMangement.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -30,6 +31,7 @@ namespace EmployeeMangement
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddScoped<IEmployeeService, SqlEmployeeService>();
             services.AddDbContext<AppDbContext>(option => option.UseSqlServer(config.GetConnectionString("DbConnection")));
+            services.AddIdentity<AppIdentityUser, AppIdentityRole>().AddEntityFrameworkStores<AppDbContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -46,7 +48,7 @@ namespace EmployeeMangement
             {
                 routers.MapRoute(
                         name: "default",
-                        template: "{controller=Employee}/{action=Index}/{id?}"
+                        template: "{controller=Account}/{action=Register}/{id?}"
                     );
                 routers.MapRoute(
                         name: "2ndRouting",
