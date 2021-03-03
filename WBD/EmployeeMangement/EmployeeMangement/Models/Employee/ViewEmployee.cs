@@ -25,5 +25,8 @@ namespace EmployeeMangement.Models.Employee
         [Required(ErrorMessage = "Email is required")]
         [RegularExpression("^[a-zA-Z0-9_\\.-]+@([a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$", ErrorMessage = "Invalid email")]
         public string Email { get; set; }
+        [Display(Name = "Department")]
+        public int DepartmentId { get; set; }
+        public string DepartmentName { get; set; }
     }
 }

@@ -27,6 +27,13 @@ using EmployeeMangement.Models.Employee;
 #line hidden
 #nullable disable
 #nullable restore
+#line 4 "C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\Views\_ViewImports.cshtml"
+using EmployeeMangement.Models.Department;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 1 "C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\Views\Home\_ViewImports.cshtml"
 using EmployeeMangement.Models.About;
 
@@ -34,7 +41,7 @@ using EmployeeMangement.Models.About;
 #line hidden
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"fc6065a5657d0e871a2e3ee077578869ca90245a", @"/Views/Home/About.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ddc340dbae19d68219e43e04944e7809201e8dcb", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5a74a6ac1621114f70f927d69c819846e56d65b3", @"/Views/_ViewImports.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"7ebe793ae32f8a1acda33f9f4b26e0b15f3caa51", @"/Views/Home/_ViewImports.cshtml")]
     public class Views_Home_About : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<IEnumerable<AboutModel>>
     {

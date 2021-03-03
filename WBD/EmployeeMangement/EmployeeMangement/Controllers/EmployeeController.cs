@@ -15,12 +15,15 @@ namespace EmployeeMangement.Controllers
     {
         private readonly IEmployeeService employeeService;
         private readonly IWebHostEnvironment webHostEnvironment;
+        private readonly IDepartmentService departmentService;
 
         public EmployeeController(IEmployeeService employeeService,
-                                    IWebHostEnvironment webHostEnvironment)
+                                    IWebHostEnvironment webHostEnvironment,
+                                    IDepartmentService departmentService)
         {
             this.employeeService = employeeService;
             this.webHostEnvironment = webHostEnvironment;
+            this.departmentService = departmentService;
         }
         public IActionResult Index()
         {
@@ -30,7 +33,10 @@ namespace EmployeeMangement.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            //ViewBag.Departments = departmentService.Gets();
+            var model = new CreateEmployee();
+            model.Departments = departmentService.Gets();
+            return View(model);
         }
         [HttpPost]
         public IActionResult Create(CreateEmployee model)
@@ -59,17 +65,21 @@ namespace EmployeeMangement.Controllers
                     Code = model.Code,
                     Email = model.Email,
                     Firstname = model.Firstname,
-                    Lastname = model.Lastname
+                    Lastname = model.Lastname,
+                    DepartmentId = model.DepartmentId
                 };
                 if (employeeService.Create(employee))
                     return RedirectToAction("Index");
             }
+            //ViewBag.Departments = departmentService.Gets();
+            model.Departments = departmentService.Gets();
             return View(model);
         }
 
         public IActionResult Profile(int id)
         {
             var employee = employeeService.Get(id);
+            employee.DepartmentName = departmentService.Gets().Single(d => d.DepartmentId == employee.DepartmentId).DepartmentName;
             return View(employee);
         }
 

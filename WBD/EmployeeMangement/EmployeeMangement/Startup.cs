@@ -30,6 +30,7 @@ namespace EmployeeMangement
             services.AddMvc(option => option.EnableEndpointRouting = false);
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddScoped<IEmployeeService, SqlEmployeeService>();
+            services.AddScoped<IDepartmentService, DepartmentService>();
             services.AddDbContext<AppDbContext>(option => option.UseSqlServer(config.GetConnectionString("DbConnection")));
             services.AddIdentity<AppIdentityUser, AppIdentityRole>().AddEntityFrameworkStores<AppDbContext>();
         }

@@ -29,7 +29,8 @@ namespace EmployeeMangement.Services
                     Code = request.Code,
                     Email = request.Email,
                     Firstname = request.Firstname,
-                    Lastname = request.Lastname
+                    Lastname = request.Lastname,
+                    DepartmentId = request.DepartmentId
                 };
                 context.Add(employee);
                 return context.SaveChanges() > 0;
@@ -64,6 +65,39 @@ namespace EmployeeMangement.Services
 
         public ViewEmployee Get(int id)
         {
+            //var depts = context.Departments.Include(d => d.Employees).ToList();
+            //var depts2 = (from d in context.Departments
+            //              select new Department() {
+            //                  Employees = (from e in context.Employees
+            //                               where e.DepartmentId == d.DepartmentId && e.Age >= 18
+            //                               select e).ToList() });
+            //var employee = context.Employees.Include(e => e.Department).Single(e => e.EmployeeId == 1);
+            //return new ViewEmployee()
+            //{
+            //    Age = employee.Age,
+            //    AvatarPath = employee.AvatarPath,
+            //    Code = employee.Code,
+            //    Email = employee.Email,
+            //    Firstname = employee.Firstname,
+            //    Id = employee.EmployeeId,
+            //    Lastname = employee.Lastname,
+            //    DepartmentId = employee.Department.DepartmentId,
+            //    DepartmentName = employee.Department.DepartmentName
+            //};
+            //return (from e in context.Employees
+            //        join d in context.Departments on e.DepartmentId equals d.DepartmentId
+            //        where e.EmployeeId == id
+            //        select new EmployeeProfile()
+            //        {
+            //            Age = e.Age,
+            //            AvatarPath = e.AvatarPath,
+            //            Code = e.Code,
+            //            Email = e.Email,
+            //            Firstname = e.Firstname,
+            //            Id = e.EmployeeId,
+            //            Lastname = e.Lastname,
+            //            DepartmentName = d.DepartmentName
+            //        }).FirstOrDefault();
             return (from e in context.Employees
                     where e.EmployeeId == id
                     select new ViewEmployee()
@@ -74,7 +108,8 @@ namespace EmployeeMangement.Services
                         Email = e.Email,
                         Firstname = e.Firstname,
                         Id = e.EmployeeId,
-                        Lastname = e.Lastname
+                        Lastname = e.Lastname,
+                        DepartmentId = e.DepartmentId
                     }).FirstOrDefault();
         }
 

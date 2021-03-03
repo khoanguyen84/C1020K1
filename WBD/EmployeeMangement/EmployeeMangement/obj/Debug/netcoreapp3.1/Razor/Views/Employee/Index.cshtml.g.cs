@@ -33,8 +33,15 @@ using EmployeeMangement.Models.Employee;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 4 "C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\Views\_ViewImports.cshtml"
+using EmployeeMangement.Models.Department;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"beb35d611d102ae951424aebe59f379d7875b065", @"/Views/Employee/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ddc340dbae19d68219e43e04944e7809201e8dcb", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5a74a6ac1621114f70f927d69c819846e56d65b3", @"/Views/_ViewImports.cshtml")]
     public class Views_Employee_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<List<ViewEmployee>>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-primary"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -76,7 +83,7 @@ using EmployeeMangement.Models.Employee;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n    <div class=\"row\">\r\n        <div class=\"col-12\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "beb35d611d102ae951424aebe59f379d7875b0655632", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "beb35d611d102ae951424aebe59f379d7875b0655847", async() => {
                 WriteLiteral("<i class=\"fa fa-plus\" aria-hidden=\"true\"></i>");
             }
             );
@@ -122,7 +129,7 @@ WriteAttributeValue("", 575, Url.Content($"/images/{emp.AvatarPath}"), 575, 41, 
 #nullable disable
             EndWriteAttribute();
             WriteLiteral(" style=\"width: 100%; height: 150px;\" alt=\"Card image\">\r\n            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "beb35d611d102ae951424aebe59f379d7875b0658390", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "beb35d611d102ae951424aebe59f379d7875b0658605", async() => {
                 WriteLiteral("Profile");
             }
             );

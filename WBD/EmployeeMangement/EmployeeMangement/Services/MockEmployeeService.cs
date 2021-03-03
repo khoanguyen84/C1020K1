@@ -79,6 +79,7 @@ namespace EmployeeMangement.Services
         public ViewEmployee Get(int id)
         {
             return employees.FirstOrDefault(e => e.Id == id);
+            //throw new NotImplementedException();
         }
 
         public List<ViewEmployee> Gets()
