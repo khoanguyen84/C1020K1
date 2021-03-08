@@ -8,7 +8,7 @@ namespace EmployeeMangement.Services
 {
     public interface IEmployeeService
     {
-        public List<ViewEmployee> Gets();
+        public List<ViewEmployee> Gets(string keyword);
         public bool Create(ViewEmployee request);
         public ViewEmployee Get(int id);
         public bool Edit(ViewEmployee request);

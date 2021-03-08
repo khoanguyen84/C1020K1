@@ -113,11 +113,16 @@ namespace EmployeeMangement.Services
                     }).FirstOrDefault();
         }
 
-        public List<ViewEmployee> Gets()
+        public List<ViewEmployee> Gets(string keyword)
         {
             var employees = context.Employees.ToList();
-            var viewEmployees = (from e in employees
-                                 select new ViewEmployee() { 
+            var viewEmployees = new List<ViewEmployee>();
+            if (!string.IsNullOrEmpty(keyword))
+            {
+                viewEmployees = (from e in employees
+                                 where e.Firstname.ToLower().Contains(keyword.ToLower()) || e.Lastname.ToLower().Contains(keyword.ToLower())
+                                 select new ViewEmployee()
+                                 {
                                      Age = e.Age,
                                      AvatarPath = e.AvatarPath,
                                      Code = e.Code,
@@ -125,8 +130,23 @@ namespace EmployeeMangement.Services
                                      Firstname = e.Firstname,
                                      Id = e.EmployeeId,
                                      Lastname = e.Lastname
-                                 });
-            return viewEmployees.ToList();
+                                 }).ToList();
+            }
+            else
+            {
+                viewEmployees = (from e in employees
+                                 select new ViewEmployee()
+                                 {
+                                     Age = e.Age,
+                                     AvatarPath = e.AvatarPath,
+                                     Code = e.Code,
+                                     Email = e.Email,
+                                     Firstname = e.Firstname,
+                                     Id = e.EmployeeId,
+                                     Lastname = e.Lastname
+                                 }).ToList();
+            }
+            return viewEmployees;
         }
 
         public bool Remove(ViewEmployee request)

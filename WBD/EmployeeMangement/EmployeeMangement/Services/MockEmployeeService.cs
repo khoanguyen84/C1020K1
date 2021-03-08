@@ -82,7 +82,7 @@ namespace EmployeeMangement.Services
             //throw new NotImplementedException();
         }
 
-        public List<ViewEmployee> Gets()
+        public List<ViewEmployee> Gets(string keyword)
         {
             return employees;
         }

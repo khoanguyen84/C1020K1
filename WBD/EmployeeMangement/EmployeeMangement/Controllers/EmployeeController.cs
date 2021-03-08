@@ -1,4 +1,5 @@
 ﻿using EmployeeMangement.Entities;
+using EmployeeMangement.Models;
 using EmployeeMangement.Models.Employee;
 using EmployeeMangement.Services;
 using Microsoft.AspNetCore.Hosting;
@@ -25,10 +26,22 @@ namespace EmployeeMangement.Controllers
             this.webHostEnvironment = webHostEnvironment;
             this.departmentService = departmentService;
         }
-        public IActionResult Index()
+        public IActionResult Index(int? pageNumber, int? pageSize, string keyword)
         {
-            return View(employeeService.Gets());
+            var employees = employeeService.Gets(keyword).OrderByDescending(e => e.Id).ToList();
+            var pagination = new Pagination(employees.Count, pageNumber, pageSize, keyword);
+            var viewModel = new PaginationEmployee()
+            {
+                Employees = employees.Skip((pagination.CurrentPage - 1) * pagination.PageSize).Take(pagination.PageSize).ToList(),
+                Pagination = pagination
+            };
+            return View(viewModel);
         }
+
+        //public IActionResult Index()
+        //{
+        //    return View(employeeService.Gets());
+        //}
 
         [HttpGet]
         public IActionResult Create()
