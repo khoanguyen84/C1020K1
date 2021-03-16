@@ -31,8 +31,17 @@ namespace EmployeeMangement
             services.AddControllersWithViews().AddRazorRuntimeCompilation();
             services.AddScoped<IEmployeeService, SqlEmployeeService>();
             services.AddScoped<IDepartmentService, DepartmentService>();
+            services.AddScoped<IProductService, ProductService>();
             services.AddDbContext<AppDbContext>(option => option.UseSqlServer(config.GetConnectionString("DbConnection")));
             services.AddIdentity<AppIdentityUser, AppIdentityRole>().AddEntityFrameworkStores<AppDbContext>();
+
+            //configuration Cookie
+            services.AddDistributedMemoryCache();
+            services.AddSession(option => {
+                option.Cookie.Name = "khoanguyen";
+                option.IdleTimeout = new TimeSpan(0, 10, 0);
+            });
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -44,12 +53,14 @@ namespace EmployeeMangement
             }
 
             app.UseStaticFiles();
+
+            app.UseSession();
             //app.UseMvcWithDefaultRoute();
             app.UseMvc(routers =>
             {
                 routers.MapRoute(
                         name: "default",
-                        template: "{controller=Account}/{action=Register}/{id?}"
+                        template: "{controller=Product}/{action=Index}/{id?}"
                     );
                 routers.MapRoute(
                         name: "2ndRouting",

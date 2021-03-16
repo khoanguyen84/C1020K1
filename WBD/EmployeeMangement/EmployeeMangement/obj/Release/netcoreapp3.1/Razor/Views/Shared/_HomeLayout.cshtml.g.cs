@@ -40,8 +40,15 @@ using EmployeeMangement.Models.Department;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\Views\_ViewImports.cshtml"
+using EmployeeMangement.Models.Product;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"92238af15a302d3e933512b875504bb513aace74", @"/Views/Shared/_HomeLayout.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5a74a6ac1621114f70f927d69c819846e56d65b3", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"41477bc30f3fb9a1a93c842b16ebcbdfc8744aba", @"/Views/_ViewImports.cshtml")]
     public class Views_Shared__HomeLayout : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("href", new global::Microsoft.AspNetCore.Html.HtmlString("~/css/site.css"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -73,7 +80,7 @@ using EmployeeMangement.Models.Department;
         public async override global::System.Threading.Tasks.Task ExecuteAsync()
         {
             WriteLiteral("<!DOCTYPE html>\r\n\r\n<html>\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "92238af15a302d3e933512b875504bb513aace744633", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "92238af15a302d3e933512b875504bb513aace744845", async() => {
                 WriteLiteral("\r\n    <meta name=\"viewport\" content=\"width=device-width\" />\r\n    <title>");
 #nullable restore
 #line 6 "C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\Views\Shared\_HomeLayout.cshtml"
@@ -83,7 +90,7 @@ using EmployeeMangement.Models.Department;
 #line hidden
 #nullable disable
                 WriteLiteral("</title>\r\n    ");
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "92238af15a302d3e933512b875504bb513aace745224", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "92238af15a302d3e933512b875504bb513aace745436", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -110,7 +117,7 @@ using EmployeeMangement.Models.Department;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "92238af15a302d3e933512b875504bb513aace747106", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "92238af15a302d3e933512b875504bb513aace747318", async() => {
                 WriteLiteral("\r\n    \r\n    <div>\r\n        <marquee>Home Layout</marquee>\r\n    </div>\r\n    <div>\r\n        ");
 #nullable restore
 #line 15 "C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\Views\Shared\_HomeLayout.cshtml"

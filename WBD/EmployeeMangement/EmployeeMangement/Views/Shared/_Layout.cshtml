@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width" />
     <title>@ViewBag.Title</title>
     <link href="~/lib/bootstrap-v4/css/bootstrap.min.css" rel="stylesheet" />
-
     <link href="~/lib/font-awesome/css/font-awesome.css" rel="stylesheet" />
+    <link href="~/css/site.css" rel="stylesheet" asp-append-version="true" />
 </head>
 <body>
+    <div class="spinner"></div>
     <div class="container">
         <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
             <a class="navbar-brand" href="#">
@@ -22,8 +23,12 @@
                     <li class="nav-item">
                         <a class="nav-link" asp-controller="Employee" asp-action="Index">Employee</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" asp-controller="Product" asp-action="Index">Product</a>
+                    </li>
                 </ul>
                 <ul class="navbar-nav ml-auto">
+                    @await Html.PartialAsync("CartPartial")
                     <li class="nav-item">
                         <a class="nav-link" href="#">SignIn</a>
                     </li>
@@ -45,6 +50,25 @@
     <script src="~/lib/jquery-validation/jquery.validate.min.js"></script>
     <script src="~/lib/jquery-validation/jquery.validate.unobtrusive.min.js"></script>
     <script src="~/lib/bootstrap-v4/js/bootstrap.min.js"></script>
+    <script>
+        $(document).on({
+            ajaxStart: function () {
+                $(".spinner").show();
+            },
+            ajaxStop: function () {
+                $(".spinner").hide();
+            },
+            ajaxError: function () {
+                $(".spinner").hide();
+            }
+        });
+        $(window).on('load', function () {
+            $(".spinner").hide();
+        });
+        $(window).on('beforeunload', function () {
+            $(".spinner").show();
+        });
+    </script>
     @RenderSection("Script", false);
 </body>
 </html>

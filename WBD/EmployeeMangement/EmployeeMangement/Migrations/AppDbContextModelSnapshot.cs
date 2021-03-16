@@ -49,7 +49,7 @@ namespace EmployeeMangement.Migrations
                     b.ToTable("AspNetRoles");
                 });
 
-            modelBuilder.Entity("EmployeeMangement.Entities.AppIndentityUser", b =>
+            modelBuilder.Entity("EmployeeMangement.Entities.AppIdentityUser", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -318,6 +318,61 @@ namespace EmployeeMangement.Migrations
                     b.ToTable("MemberFoods");
                 });
 
+            modelBuilder.Entity("EmployeeMangement.Entities.Product", b =>
+                {
+                    b.Property<int>("ProductId")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(500)")
+                        .HasMaxLength(500);
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(100)")
+                        .HasMaxLength(100);
+
+                    b.HasKey("ProductId");
+
+                    b.ToTable("Products");
+
+                    b.HasData(
+                        new
+                        {
+                            ProductId = 1,
+                            Description = "Số 1 cao 40cm rộng 20cm dày 20cm màu xanh lá cây đậm",
+                            Price = 1000000m,
+                            ProductName = "Đá phong thuỷ tự nhiên"
+                        },
+                        new
+                        {
+                            ProductId = 2,
+                            Description = "Trang trí trong nhà Chất liệu : • Đá muối",
+                            Price = 1500000m,
+                            ProductName = "Đèn đá muối hình tròn"
+                        },
+                        new
+                        {
+                            ProductId = 3,
+                            Description = "Tranh sơn mài loại nhỏ 15x 15 giá 50.000",
+                            Price = 50000m,
+                            ProductName = "Tranh sơn mài"
+                        },
+                        new
+                        {
+                            ProductId = 4,
+                            Description = "Nguyên liệu thể hiện :    Sơn dầu",
+                            Price = 450000m,
+                            ProductName = "Tranh sơn dầu - Ngựa"
+                        });
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.Property<int>("Id")
@@ -457,7 +512,7 @@ namespace EmployeeMangement.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("EmployeeMangement.Entities.AppIndentityUser", null)
+                    b.HasOne("EmployeeMangement.Entities.AppIdentityUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -466,7 +521,7 @@ namespace EmployeeMangement.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("EmployeeMangement.Entities.AppIndentityUser", null)
+                    b.HasOne("EmployeeMangement.Entities.AppIdentityUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -481,7 +536,7 @@ namespace EmployeeMangement.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("EmployeeMangement.Entities.AppIndentityUser", null)
+                    b.HasOne("EmployeeMangement.Entities.AppIdentityUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -490,7 +545,7 @@ namespace EmployeeMangement.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("EmployeeMangement.Entities.AppIndentityUser", null)
+                    b.HasOne("EmployeeMangement.Entities.AppIdentityUser", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)

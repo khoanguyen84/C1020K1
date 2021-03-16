@@ -19,6 +19,7 @@ namespace EmployeeMangement.DbContexts
         public DbSet<Member> Members { get; set; }
         public DbSet<Food> Foods { get; set; }
         public DbSet<MemberFood> MemberFoods { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -71,6 +72,35 @@ namespace EmployeeMangement.DbContexts
                     Email = "huy.phan@codegym.vn",
                     EmployeeId = 3,
                     DepartmentId = 2
+                });
+            modelBuilder.Entity<Product>().HasData(
+                new Product()
+                {
+                    ProductId = 1,
+                    ProductName = "Đá phong thuỷ tự nhiên",
+                    Description = "Số 1 cao 40cm rộng 20cm dày 20cm màu xanh lá cây đậm",
+                    Price = 1000000
+                },
+                new Product()
+                {
+                    ProductId = 2,
+                    ProductName = "Đèn đá muối hình tròn",
+                    Description = "Trang trí trong nhà Chất liệu : • Đá muối",
+                    Price = 1500000
+                },
+                new Product()
+                {
+                    ProductId = 3,
+                    ProductName = "Tranh sơn mài",
+                    Description = "Tranh sơn mài loại nhỏ 15x 15 giá 50.000",
+                    Price = 50000
+                },
+                new Product()
+                {
+                    ProductId = 4,
+                    ProductName = "Tranh sơn dầu - Ngựa",
+                    Description = "Nguyên liệu thể hiện :    Sơn dầu",
+                    Price = 450000
                 });
         }
     }

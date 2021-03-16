@@ -40,8 +40,15 @@ using EmployeeMangement.Models.Department;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 5 "C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\Views\_ViewImports.cshtml"
+using EmployeeMangement.Models.Product;
+
+#line default
+#line hidden
+#nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"dc17367b8746c7fa82efadbeff575c1bace8fceb", @"/Views/Employee/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"5a74a6ac1621114f70f927d69c819846e56d65b3", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"41477bc30f3fb9a1a93c842b16ebcbdfc8744aba", @"/Views/_ViewImports.cshtml")]
     public class Views_Employee_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<PaginationEmployee>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("class", new global::Microsoft.AspNetCore.Html.HtmlString("btn btn-primary"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -89,7 +96,7 @@ using EmployeeMangement.Models.Department;
 #line hidden
 #nullable disable
             WriteLiteral("\r\n<div class=\"row\">\r\n    <div class=\"col-12\">\r\n        ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb7006", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb7218", async() => {
                 WriteLiteral("<i class=\"fa fa-plus\" aria-hidden=\"true\"></i>");
             }
             );
@@ -119,7 +126,7 @@ using EmployeeMangement.Models.Department;
 #line hidden
 #nullable disable
             WriteLiteral("                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb9140", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb9352", async() => {
 #nullable restore
 #line 23 "C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\Views\Employee\Index.cshtml"
                                                       Write(item);
@@ -163,7 +170,7 @@ using EmployeeMangement.Models.Department;
 #line hidden
 #nullable disable
             WriteLiteral("                            ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb11595", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("option", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb11807", async() => {
 #nullable restore
 #line 27 "C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\Views\Employee\Index.cshtml"
                                              Write(item);
@@ -241,7 +248,7 @@ WriteAttributeValue("", 1591, Url.Content($"/images/{emp.AvatarPath}"), 1591, 41
 #nullable disable
             EndWriteAttribute();
             WriteLiteral(" style=\"width: 100%; height: 150px;\" alt=\"Card image\">\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb15579", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb15791", async() => {
                 WriteLiteral("Profile");
             }
             );
@@ -294,7 +301,7 @@ WriteAttributeValue("", 2001, Model.Pagination.CurrentPage == 1 ? "page-item dis
 #nullable disable
             EndWriteAttribute();
             WriteLiteral(">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb18958", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb19170", async() => {
                 WriteLiteral("First");
             }
             );
@@ -329,7 +336,7 @@ WriteAttributeValue("", 2206, Model.Pagination.CurrentPage == 1 ? "page-item dis
 #nullable disable
             EndWriteAttribute();
             WriteLiteral(">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb21386", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb21598", async() => {
                 WriteLiteral("Previous");
             }
             );
@@ -382,7 +389,7 @@ WriteAttributeValue("", 2579, pageNumber == Model.Pagination.CurrentPage ? "page
 #nullable disable
             EndWriteAttribute();
             WriteLiteral(">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb24834", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb25046", async() => {
 #nullable restore
 #line 61 "C:\CodeGym\Class\C1020K1\WBD\EmployeeMangement\EmployeeMangement\Views\Employee\Index.cshtml"
                                                                                                                                                                                                              Write(pageNumber);
@@ -440,7 +447,7 @@ WriteAttributeValue("", 2822, Model.Pagination.CurrentPage == Model.Pagination.T
 #nullable disable
             EndWriteAttribute();
             WriteLiteral(">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb28529", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb28741", async() => {
                 WriteLiteral("Next");
             }
             );
@@ -482,7 +489,7 @@ WriteAttributeValue("", 3058, Model.Pagination.CurrentPage == Model.Pagination.T
 #nullable disable
             EndWriteAttribute();
             WriteLiteral(">");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb31448", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "dc17367b8746c7fa82efadbeff575c1bace8fceb31660", async() => {
                 WriteLiteral("Last");
             }
             );

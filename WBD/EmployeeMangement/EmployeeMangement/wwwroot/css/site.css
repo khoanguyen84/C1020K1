@@ -1,14 +1,10 @@
-﻿*, *::after, *::before{
-    box-sizing: border-box;
-    margin:0px;
-    padding: 0px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-table, tr,td{
-    border-collapse: collapse;
-    border:1px solid;
-}
-tr,td{
-    padding: 10px;
+﻿.spinner {
+    display: none;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.8) url("../images/loading.gif") 50% 50% no-repeat;
 }
