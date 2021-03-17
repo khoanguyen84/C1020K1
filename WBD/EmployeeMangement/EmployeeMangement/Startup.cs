@@ -60,7 +60,7 @@ namespace EmployeeMangement
             {
                 routers.MapRoute(
                         name: "default",
-                        template: "{controller=Product}/{action=Index}/{id?}"
+                        template: "{controller=Dashboard}/{action=Index}/{id?}"
                     );
                 routers.MapRoute(
                         name: "2ndRouting",

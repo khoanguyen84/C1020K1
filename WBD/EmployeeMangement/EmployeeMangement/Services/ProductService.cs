@@ -1,6 +1,7 @@
 ﻿using EmployeeMangement.DbContexts;
 using EmployeeMangement.Entities;
 using EmployeeMangement.Models.Department;
+using EmployeeMangement.Models.Product;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -25,6 +26,37 @@ namespace EmployeeMangement.Services
         public List<Product> Gets()
         {
             return context.Products.ToList();
+        }
+
+        public SaveResponse Save(SaveRequest request)
+        {
+            var result = new SaveResponse()
+            {
+                Success = false,
+                Message = "Something went wrong, please contact administrator"
+            };
+            try
+            {
+                //add new
+                if (request.ProductId == 0)
+                {
+                    var product = new Product()
+                    {
+                        ProductId = request.ProductId,
+                        Description = request.Description,
+                        Price = request.Price,
+                        ProductName = request.ProductName
+                    };
+                    context.Add(product);
+                    result.Success = context.SaveChanges() > 0;
+                    result.Message = "Product has been created successfully";
+                }
+            }
+            catch(Exception ex)
+            {
+
+            }
+            return result;
         }
     }
 }

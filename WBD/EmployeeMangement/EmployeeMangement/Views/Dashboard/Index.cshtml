@@ -1,1 +1,62 @@
-﻿<h1>Welcome to Dashboard</h1>
+﻿<h1>Product Management</h1>
+
+<div class="w-100">
+    <a class="btn btn-dark" onclick="product.openModal()"><i class="fa fa-plus"></i></a>
+</div>
+<div class="w-100">
+    <table id="tbProduct" class="table table-bordered table-hover table-striped table-responsive-lg">
+        <thead class="thead-dark">
+            <tr>
+                <th>#Id</th>
+                <th>Product name</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+<div id="addEditProduct" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Create new product</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="addEditProductForm">
+                    <input type="number" hidden id="ProductId" name="ProductId" value="0"/>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-group">
+                                <label>Product name</label>
+                                <input id="ProductName" name="ProductName" type="text" class="form-control" data-rule-required="true" data-msg-required="Product Name is required"/>
+                            </div>
+                            <div class="form-group">
+                                <label>Price</label>
+                                <input id="Price" name="Price" type="number" class="form-control" data-rule-required="true" data-msg-required="Price is required"/>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <label>Description</label>
+                            <textarea id="Description" name="Description" class="form-control" cols="10" rows="10" data-rule-required="true" data-msg-required="Description is required"></textarea>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <a href="javascript:;" class="btn btn-primary" onclick="product.save()"><i class="fa fa-save"></i></a>
+                <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times"></i></button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section Script{
+    <script src="~/lib/datatables.net/jquery.dataTables.min.js"></script>
+    <script src="~/scripts/product.js" asp-append-version="true"></script>
+}
