@@ -2,6 +2,7 @@
 using EmployeeMangement.Entities;
 using EmployeeMangement.Models.Department;
 using EmployeeMangement.Models.Product;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -50,6 +51,16 @@ namespace EmployeeMangement.Services
                     context.Add(product);
                     result.Success = context.SaveChanges() > 0;
                     result.Message = "Product has been created successfully";
+                }
+                else
+                {
+                    var product = Get(request.ProductId);
+                    product.Description = request.Description;
+                    product.ProductName = request.ProductName;
+                    product.Price = request.Price;
+                    context.Entry<Product>(product).State = EntityState.Modified;
+                    result.Success = context.SaveChanges() > 0;
+                    result.Message = "Product has been updated successfully";
                 }
             }
             catch(Exception ex)

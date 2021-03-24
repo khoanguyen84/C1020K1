@@ -1,0 +1,140 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Shopping.BAL.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Shopping.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Shopping.BAL.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shopping.BAL.Interface.dll": {}
+        }
+      },
+      "Shopping.DAL.Interface/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Shopping.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Shopping.DAL.Interface.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shopping.DAL.Interface.dll": {}
+        }
+      },
+      "Shopping.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Shopping.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shopping.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Shopping.BAL.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Shopping.IService/Shopping.BAL.Interface.csproj",
+      "msbuildProject": "../Shopping.IService/Shopping.BAL.Interface.csproj"
+    },
+    "Shopping.DAL.Interface/1.0.0": {
+      "type": "project",
+      "path": "../Shopping.IRepository/Shopping.DAL.Interface.csproj",
+      "msbuildProject": "../Shopping.IRepository/Shopping.DAL.Interface.csproj"
+    },
+    "Shopping.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Shopping.Domain/Shopping.Domain.csproj",
+      "msbuildProject": "../Shopping.Domain/Shopping.Domain.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "Shopping.BAL.Interface >= 1.0.0",
+      "Shopping.DAL.Interface >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Admin\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\CodeGym\\Class\\C1020K1\\WBD\\API.Shopping\\Shopping\\Shopping.Service\\Shopping.BAL.Implement.csproj",
+      "projectName": "Shopping.BAL.Implement",
+      "projectPath": "C:\\CodeGym\\Class\\C1020K1\\WBD\\API.Shopping\\Shopping\\Shopping.Service\\Shopping.BAL.Implement.csproj",
+      "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+      "outputPath": "C:\\CodeGym\\Class\\C1020K1\\WBD\\API.Shopping\\Shopping\\Shopping.Service\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "C:\\CodeGym\\Class\\C1020K1\\WBD\\API.Shopping\\Shopping\\Shopping.IRepository\\Shopping.DAL.Interface.csproj": {
+              "projectPath": "C:\\CodeGym\\Class\\C1020K1\\WBD\\API.Shopping\\Shopping\\Shopping.IRepository\\Shopping.DAL.Interface.csproj"
+            },
+            "C:\\CodeGym\\Class\\C1020K1\\WBD\\API.Shopping\\Shopping\\Shopping.IService\\Shopping.BAL.Interface.csproj": {
+              "projectPath": "C:\\CodeGym\\Class\\C1020K1\\WBD\\API.Shopping\\Shopping\\Shopping.IService\\Shopping.BAL.Interface.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.200\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

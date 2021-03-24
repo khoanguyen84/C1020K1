@@ -1,0 +1,63 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "Shopping.BAL.Implement/1.0.0": {
+        "dependencies": {
+          "Shopping.BAL.Interface": "1.0.0",
+          "Shopping.DAL.Interface": "1.0.0"
+        },
+        "runtime": {
+          "Shopping.BAL.Implement.dll": {}
+        }
+      },
+      "Shopping.BAL.Interface/1.0.0": {
+        "dependencies": {
+          "Shopping.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Shopping.BAL.Interface.dll": {}
+        }
+      },
+      "Shopping.DAL.Interface/1.0.0": {
+        "dependencies": {
+          "Shopping.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Shopping.DAL.Interface.dll": {}
+        }
+      },
+      "Shopping.Domain/1.0.0": {
+        "runtime": {
+          "Shopping.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Shopping.BAL.Implement/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shopping.BAL.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shopping.DAL.Interface/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Shopping.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

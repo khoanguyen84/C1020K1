@@ -1,0 +1,9 @@
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Domain\bin\Debug\netcoreapp3.1\Shopping.Domain.deps.json
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Domain\bin\Debug\netcoreapp3.1\Shopping.Domain.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Domain\bin\Debug\netcoreapp3.1\Shopping.Domain.pdb
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Domain\obj\Debug\netcoreapp3.1\Shopping.Domain.csprojAssemblyReference.cache
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Domain\obj\Debug\netcoreapp3.1\Shopping.Domain.AssemblyInfoInputs.cache
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Domain\obj\Debug\netcoreapp3.1\Shopping.Domain.AssemblyInfo.cs
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Domain\obj\Debug\netcoreapp3.1\Shopping.Domain.csproj.CoreCompileInputs.cache
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Domain\obj\Debug\netcoreapp3.1\Shopping.Domain.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Domain\obj\Debug\netcoreapp3.1\Shopping.Domain.pdb

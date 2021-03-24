@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shopping.Domain\Shopping.Domain.csproj" />
+    <ProjectReference Include="..\Shopping.IRepository\Shopping.DAL.Interface.csproj" />
+    <ProjectReference Include="..\Shopping.IService\Shopping.BAL.Interface.csproj" />
+    <ProjectReference Include="..\Shopping.Repository\Shopping.DAL.Implement.csproj" />
+    <ProjectReference Include="..\Shopping.Service\Shopping.BAL.Implement.csproj" />
+  </ItemGroup>
+
+
+</Project>

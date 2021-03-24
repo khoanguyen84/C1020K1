@@ -1,0 +1,16 @@
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\bin\Debug\netcoreapp3.1\Shopping.BAL.Implement.deps.json
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\bin\Debug\netcoreapp3.1\Shopping.BAL.Implement.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\bin\Debug\netcoreapp3.1\Shopping.BAL.Implement.pdb
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\bin\Debug\netcoreapp3.1\Shopping.BAL.Interface.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\bin\Debug\netcoreapp3.1\Shopping.Domain.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\bin\Debug\netcoreapp3.1\Shopping.BAL.Interface.pdb
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\bin\Debug\netcoreapp3.1\Shopping.Domain.pdb
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\obj\Debug\netcoreapp3.1\Shopping.BAL.Implement.csprojAssemblyReference.cache
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\obj\Debug\netcoreapp3.1\Shopping.BAL.Implement.AssemblyInfoInputs.cache
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\obj\Debug\netcoreapp3.1\Shopping.BAL.Implement.AssemblyInfo.cs
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\obj\Debug\netcoreapp3.1\Shopping.BAL.Implement.csproj.CoreCompileInputs.cache
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\obj\Debug\netcoreapp3.1\Shopping.BAL.Implement.csproj.CopyComplete
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\obj\Debug\netcoreapp3.1\Shopping.BAL.Implement.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\obj\Debug\netcoreapp3.1\Shopping.BAL.Implement.pdb
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\bin\Debug\netcoreapp3.1\Shopping.DAL.Interface.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Service\bin\Debug\netcoreapp3.1\Shopping.DAL.Interface.pdb

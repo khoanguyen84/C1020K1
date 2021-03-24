@@ -1,0 +1,5 @@
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Repository\bin\Debug\netcoreapp3.1\Shopping.Domain.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Repository\bin\Debug\netcoreapp3.1\Shopping.IRepository.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Repository\obj\Debug\netcoreapp3.1\Shopping.Repository.csprojAssemblyReference.cache
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Repository\obj\Debug\netcoreapp3.1\Shopping.Repository.AssemblyInfoInputs.cache
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.Repository\obj\Debug\netcoreapp3.1\Shopping.Repository.AssemblyInfo.cs

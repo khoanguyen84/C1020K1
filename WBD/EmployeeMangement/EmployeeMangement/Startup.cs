@@ -42,6 +42,8 @@ namespace EmployeeMangement
                 option.IdleTimeout = new TimeSpan(0, 10, 0);
             });
 
+            services.AddCors();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -55,6 +57,7 @@ namespace EmployeeMangement
             app.UseStaticFiles();
 
             app.UseSession();
+            app.UseCors(option => option.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
             //app.UseMvcWithDefaultRoute();
             app.UseMvc(routers =>
             {
@@ -68,7 +71,7 @@ namespace EmployeeMangement
                     );
 
             });
-
+            
             //app.UseRouting();
 
             //app.UseEndpoints(endpoints =>
