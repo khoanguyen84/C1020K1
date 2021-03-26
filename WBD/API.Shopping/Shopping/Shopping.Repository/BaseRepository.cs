@@ -9,12 +9,13 @@ namespace Shopping.DAL.Implement
 {
     public class BaseRepository
     {
-        //private readonly IConfiguration configuration;
+        private readonly IConfiguration configuration;
         protected IDbConnection connection;
-        public BaseRepository()
+        public BaseRepository(IConfiguration configuration)
         {
-            //configuration = new Configuration();
-            connection = new SqlConnection(@"Data Source=admin\sqlexpress;Initial Catalog=Shopping;Integrated Security=True");
+            this.configuration = configuration;
+            //connection = new SqlConnection(@"Data Source=admin\sqlexpress;Initial Catalog=Shopping;Integrated Security=True");
+            connection = new SqlConnection(this.configuration.GetConnectionString("ShoppingDbConnection"));
             
         }
     }

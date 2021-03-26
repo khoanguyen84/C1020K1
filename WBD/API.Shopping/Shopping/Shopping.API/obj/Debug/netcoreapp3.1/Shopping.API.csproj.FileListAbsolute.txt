@@ -38,3 +38,8 @@ C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\bin\Debug\netcor
 C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Shopping.DAL.Implement.pdb
 C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Shopping.BAL.Implement.pdb
 C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.csproj.CopyComplete
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.MvcApplicationPartsAssemblyInfo.cs

@@ -6,13 +6,16 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 using Shopping.BAL.Implement;
 using Shopping.BAL.Interface;
 using Shopping.DAL.Implement;
 using Shopping.DAL.Interface;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Threading.Tasks;
 
 namespace Shopping.API
@@ -32,6 +35,8 @@ namespace Shopping.API
             services.AddControllers();
             services.AddScoped<ICatetoryService, CategoryService>();
             services.AddScoped<ICategoryRepository, CategoryRepository>();
+
+            services.AddSwaggerGen();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -43,6 +48,13 @@ namespace Shopping.API
             }
 
             app.UseHttpsRedirection();
+
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Shopping API");
+            });
 
             app.UseRouting();
 
