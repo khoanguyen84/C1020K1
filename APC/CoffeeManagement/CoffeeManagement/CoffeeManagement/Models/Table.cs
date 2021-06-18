@@ -12,7 +12,7 @@ namespace CoffeeManagement.Models
 
         public override string ToString()
         {
-            return $"{tableId}\t{tableCode}\t{status}";
+            return $"{tableId}\t{tableCode}\t{(status == 1 ? "Free" : "Inused")}";
         }
     }
 }

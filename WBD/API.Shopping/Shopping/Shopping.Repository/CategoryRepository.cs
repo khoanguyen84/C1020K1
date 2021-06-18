@@ -38,6 +38,25 @@ namespace Shopping.DAL.Implement
             
         }
 
+        public async Task<CreateCategoryRes> CreateCategory2(CreateCategoryReq request)
+        {
+            try
+            {
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@CategoryName", request.CategoryName);
+                var result = await SqlMapper.QueryFirstAsync<CreateCategoryRes>(
+                                                cnn: connection,
+                                                sql: Helper.GetEnumDescription(Constant.SP.sp_CreateCategory2),
+                                                param: parameters,
+                                                commandType: CommandType.StoredProcedure);
+                return result;
+            }
+            catch (Exception ex)
+            {
+                return new CreateCategoryRes();
+            }
+        }
+
         public async Task<Category> GetCategoryById(int categoryId)
         {
             try
@@ -57,6 +76,26 @@ namespace Shopping.DAL.Implement
                 return new Category();
             }
             
+        }
+
+        public async Task<Category> GetCategoryByName(string categoryName)
+        {
+            try
+            {
+                DynamicParameters parameters = new DynamicParameters();
+                parameters.Add("@CategoryName", categoryName);
+                var result = await SqlMapper.QueryFirstOrDefaultAsync<Category>(
+                                                cnn: connection,
+                                                sql: "sp_GetCategoryByName",
+                                                param: parameters,
+                                                commandType: CommandType.StoredProcedure);
+                return result;
+
+            }
+            catch (Exception ex)
+            {
+                return new Category();
+            }
         }
 
         public async Task<IEnumerable<Category>> Gets()

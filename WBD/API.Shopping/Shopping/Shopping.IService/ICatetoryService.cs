@@ -12,6 +12,7 @@ namespace Shopping.BAL.Interface
         public Task<IEnumerable<Category>> Gets();
         public Task<Category> GetCategoryById(int categoryId);
         public Task<CreateCategoryRes> CreateCategory(CreateCategoryReq request);
+        public Task<CreateCategoryRes> CreateCategory2(CreateCategoryReq request);
     }
 }
 

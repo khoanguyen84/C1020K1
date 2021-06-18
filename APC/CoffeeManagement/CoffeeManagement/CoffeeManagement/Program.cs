@@ -11,6 +11,7 @@ namespace CoffeeManagement
         public static ShopService shopService = new ShopService();
         static void Main(string[] args)
         {
+            #region
             //List<OrderDetail> orderDetails = new List<OrderDetail>()
             //{
             //    new OrderDetail()
@@ -33,7 +34,26 @@ namespace CoffeeManagement
             //    }
             //};
             //shopService.UpdateOrder(1, orderDetails);
-            shopService.Pay(1);
+            #endregion
+            //shopService.Pay(1);
+            //List<OrderDetail> orderDetails = new List<OrderDetail>()
+            //{
+            //    new OrderDetail()
+            //    {
+            //        productName = "coffee milk",
+            //        price = 12000,
+            //        quantity = 1
+            //    },
+            //    new OrderDetail()
+            //    {
+            //        productName = "Coca",
+            //        price = 10000,
+            //        quantity = 2
+            //    }
+            //};
+            //shopService.UpdateOrder(1, orderDetails);
+            //shopService.DisplayTables();
+            shopService.Pay(3);
         }
     }
 }

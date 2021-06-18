@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Shopping.API</name>
+    </assembly>
+    <members>
+        <member name="M:Shopping.API.Controllers.CategoryController.Gets">
+            <summary>
+            Get categories in actived
+            </summary>
+            <returns>list of categories</returns>
+        </member>
+        <member name="M:Shopping.API.Controllers.CategoryController.GetCategoryById(System.Int32)">
+            <summary>
+            Get category by category Id
+            </summary>
+            <param name="categoryId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Shopping.API.Controllers.CategoryController.Create(Shopping.Domain.Requests.CreateCategoryReq)">
+            <summary>
+            Create category
+            </summary>
+            <param name="req"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

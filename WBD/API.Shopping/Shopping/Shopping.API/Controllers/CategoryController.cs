@@ -50,7 +50,7 @@ namespace Shopping.API.Controllers
         [Route("api/category/create")]
         public async Task<IActionResult> Create(CreateCategoryReq req)
         {
-            return Ok(await categoryService.CreateCategory(req));
+            return Ok(await categoryService.CreateCategory2(req));
         }
     }
 }

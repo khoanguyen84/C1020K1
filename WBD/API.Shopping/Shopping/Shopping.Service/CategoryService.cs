@@ -21,6 +21,14 @@ namespace Shopping.BAL.Implement
         {
             try
             {
+                if((await categoryRepository.GetCategoryByName(request.CategoryName)) != null)
+                {
+                    return new CreateCategoryRes()
+                    {
+                        CategoryId = 0,
+                        Message = "Category is existed"
+                    };
+                }
                 var result = await categoryRepository.CreateCategory(request);
                 return new CreateCategoryRes()
                 {
@@ -36,6 +44,11 @@ namespace Shopping.BAL.Implement
                     Message = "Something went wrong, please contact administrator."
                 };
             }
+        }
+
+        public async Task<CreateCategoryRes> CreateCategory2(CreateCategoryReq request)
+        {
+            return await categoryRepository.CreateCategory2(request);
         }
 
         public async Task<Category> GetCategoryById(int categoryId)

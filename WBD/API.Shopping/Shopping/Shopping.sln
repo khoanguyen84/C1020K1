@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31025.194
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.API", "Shopping.API\Shopping.API.csproj", "{7422123B-34E4-41F7-865B-CFD1A3320196}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.API", "Shopping.API\Shopping.API.csproj", "{7422123B-34E4-41F7-865B-CFD1A3320196}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.BAL.Interface", "Shopping.IService\Shopping.BAL.Interface.csproj", "{8C58B2D5-B906-4492-8FBF-4F37503D87BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.BAL.Interface", "Shopping.IService\Shopping.BAL.Interface.csproj", "{8C58B2D5-B906-4492-8FBF-4F37503D87BB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.BAL.Implement", "Shopping.Service\Shopping.BAL.Implement.csproj", "{D8706BBF-1690-425E-9232-1EBB1538B42D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.BAL.Implement", "Shopping.Service\Shopping.BAL.Implement.csproj", "{D8706BBF-1690-425E-9232-1EBB1538B42D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.DAL.Interface", "Shopping.IRepository\Shopping.DAL.Interface.csproj", "{FB3B6AF9-9D0F-4BE4-A509-F14EF801E1A7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.DAL.Interface", "Shopping.IRepository\Shopping.DAL.Interface.csproj", "{FB3B6AF9-9D0F-4BE4-A509-F14EF801E1A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.DAL.Implement", "Shopping.Repository\Shopping.DAL.Implement.csproj", "{6CA4AE27-FA4F-4A76-86AF-3F6C7C98E823}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.DAL.Implement", "Shopping.Repository\Shopping.DAL.Implement.csproj", "{6CA4AE27-FA4F-4A76-86AF-3F6C7C98E823}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shopping.Domain", "Shopping.Domain\Shopping.Domain.csproj", "{3CD71C7D-E2AA-4F82-A377-BE449B8532C7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Shopping.Domain", "Shopping.Domain\Shopping.Domain.csproj", "{3CD71C7D-E2AA-4F82-A377-BE449B8532C7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -43,3 +43,4 @@ C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\bin\Debug\netcor
 C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\obj\Debug\netcoreapp3.1\Shopping.API.MvcApplicationPartsAssemblyInfo.cs
+C:\CodeGym\Class\C1020K1\WBD\API.Shopping\Shopping\Shopping.API\bin\Debug\netcoreapp3.1\Shopping.API.xml

@@ -14,7 +14,9 @@ namespace Shopping.Domain
             [Description("sp_GetCategoryById")]
             sp_GetCategoryById,
             [Description("sp_CreateCategory")]
-            sp_CreateCategory
+            sp_CreateCategory,
+            [Description("sp_CreateCategory2")]
+            sp_CreateCategory2
         }
     }
 }

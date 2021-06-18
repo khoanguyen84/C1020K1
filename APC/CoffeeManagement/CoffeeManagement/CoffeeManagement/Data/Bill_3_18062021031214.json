@@ -1,0 +1,21 @@
+{
+  "tableId": 3,
+  "startTime": "2021-06-18T15:05:52.2318721+07:00",
+  "endTime": "2021-06-18T15:12:14.808441+07:00",
+  "totalAmount": 95000.0,
+  "ispaid": true,
+  "OrderDetails": [
+    {
+      "productName": "Back coffee",
+      "quantity": 2,
+      "price": 10000.0,
+      "amount": 20000.0
+    },
+    {
+      "productName": "Lemon fruit",
+      "quantity": 3,
+      "price": 25000.0,
+      "amount": 75000.0
+    }
+  ]
+}
